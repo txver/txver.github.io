@@ -1,0 +1,56 @@
+.contentWrapper {
+    height: calc(100vh - 6rem);
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollWrapper {
+    flex: 1;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+
+.section {
+    height: 80%;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+
+.section h2 {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.odd {
+    background-color: var(--bg-color);
+}
+
+.even {
+    background-color: var(--fg-color);
+}
+
+.spacer {
+    height: 7.5vh;
+    flex-shrink: 0;
+    pointer-events: none;
+    user-select: none;
+    scroll-snap-align: none;
+}

@@ -1,0 +1,50 @@
+.diagramWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 1;
+}
+
+.stackItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 200px;
+    min-width: 200px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.arrow {
+    font-size: 2rem;
+    color: var(--text-primary);
+    user-select: none;
+}
+
+.stackItem img {
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.stackItem h3 {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.stackItem p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: #ccc;
+}
+
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
