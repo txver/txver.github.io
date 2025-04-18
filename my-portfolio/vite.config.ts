@@ -12,7 +12,6 @@ export default defineConfig({
     ],
     
   },
-  base: '/txver.github.io/',
   build: {
     outDir: '../build',
   },
