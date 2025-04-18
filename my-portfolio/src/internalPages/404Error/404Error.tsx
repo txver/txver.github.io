@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './404Error.module.css';
 import { Link } from 'react-router-dom';
-import { Bold } from 'lucide-react';
 
 const Error404: React.FC = () => {
   return (
