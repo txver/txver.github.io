@@ -1,0 +1,60 @@
+.toggleWrapper {
+    position: fixed;
+    /* Fixed to screen for persistent access */
+    top: 30%;
+    /* Position ~30% from top */
+    right: 1rem;
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    background: var(--toggle-bg);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+}
+
+.toggleKnob {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background: var(--toggle-knob);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.toggleKnob.light {
+    transform: translateY(-20px);
+    /* Knob moves up for light mode */
+}
+
+.toggleKnob.dark {
+    transform: translateY(20px);
+    /* Knob moves down for dark mode */
+}
+
+.iconWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: var(--text-primary);
+    z-index: 2;
+    pointer-events: none;
+    /* Allow click-through to toggleWrapper */
+}
+
+.sun {
+    margin-bottom: 8px;
+    color: var(--toggle-knob-light-icon);
+    /* Light mode highlight */
+}
+
+.moon {
+    margin-top: 8px;
+    color: var(--toggle-knob-dark-icon);
+    /* Dark mode highlight */
+}
