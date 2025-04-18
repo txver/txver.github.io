@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>Welcome to my portfolio 👋</h1>
-      <p className={styles.paragraph}>This is the home page.</p>
+      <p className={styles.paragraph}>This is a work in progress🛠️!</p>
     </div>
   );
 };
