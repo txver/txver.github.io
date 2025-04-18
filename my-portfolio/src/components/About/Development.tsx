@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SiCssmodules } from 'react-icons/si';
-import { Images as LucideImages} from 'lucide-react';
+import { LuImages as LucideImages } from 'react-icons/lu';
 
 import aboutStyles from '../../pages/About/About.module.css';
 import devStyle from './Development.module.css';
@@ -36,8 +36,8 @@ const Development: React.FC<{ index: number }> = ({ index }) => {
 
                 <div className={devStyle.quadrant}>
                     <LucideImages size={32} className={devStyle.icon} />
-                    <h3 className={styles.paragraph}>Iconography via React Icons & Lucide</h3>
-                    <p className={styles.paragraph}>A combination of <code>react-icons</code> and <code>lucide-react</code> ensures flexible, consistent icon usage across the app.</p>
+                    <h3 className={styles.paragraph}>Iconography via React Icons and Lucide-React</h3>
+                    <p className={styles.paragraph}>Using <code>react-icons</code> and <code>Lucide-React</code> ensures flexible, consistent icon usage across the app.</p>
                 </div>
             </div>
         </section>
