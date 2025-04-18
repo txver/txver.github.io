@@ -1,0 +1,39 @@
+
+
+.grid {
+    display: grid;
+    /* Force 2 equal-width columns */
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 2rem;
+}
+
+.quadrant {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    transition: background 0.3s ease;
+
+    height: 10rem;
+}
+
+.quadrant h3 {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.quadrant p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.icon {
+    color: var(--accent);
+}
