@@ -1,10 +1,11 @@
 .pageWrapper {
+    margin-top: 6rem;
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 6rem);
 }
 
 .trapezoidTop {
